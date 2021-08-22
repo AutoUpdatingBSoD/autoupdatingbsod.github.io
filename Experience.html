@@ -9,10 +9,10 @@
       html {
         background-color : #dddddd;
       }
-      #darkModeDetect. #headertitle, #headersubtitle {
+      #darkModeDetect, #headertitle, #headertitle1, #headertitle2, #headertitle3, #headertitle4, #headertitle5, #headersubtitle {
         color: #000000
       }
-      #homemessage {
+      #homemessage1, #homemessage2, #homemessage3, #homemessage4, #homemessage5 {
         display: none;
         background-color: #aaaaff;
         color: #222222
@@ -58,50 +58,147 @@
         </nav>
         <div id = "DarkModeDetect">
           <button id="DarkMode" class="button is-outlined" onclick="SwapDarkMode()">Dark Mode</button>
-      <center><h3 id="headertitle" class="title is-1">Work Experience</h1>
+      <center><h3 id="headertitle" class="title is-1">Work Experience</h1></center>
         <br><article class="message is-link is-large">
-        <div id="homemessage" class="message-body">
+        <div id="homemessage1" class="message-body">
           <div class="content">
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br> 
-            <br></br>
-            <br></br>
-            <br></br>
-          </div> </div>  
-      </article></center>
+                <ul>
+
+                <li><h3 id="headertitle1" class="title is-4">I have earned a Bachelor's Degree in Computer Science from Radford University earned in Spring 2019</h3></li>
+                Experience Includes the Following:
+                <ol>
+                  <li>
+                  </li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ol>
+              </ul> </div> </div>
+            </article>
+            <article class="message is-link is-large">
+              <div id="homemessage2" class="message-body">
+                <div class="content">
+                <ul>
+                <li><h3 id="headertitle2" class="title is-4">I have earned a Master's Degree in Computer Science from Radford University earned in Spring 2021</h3></li>
+                Experience Includes the Following:
+                <ol>
+                  <li>
+                  </li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ol>
+              </ul> </div> </div>
+            </article>
+                <article class="message is-link is-large">
+                  <div id="homemessage3" class="message-body">
+                    <div class="content">
+                      <ul>
+                <li><h3 id="headertitle3" class="title is-4">I worked at an internship at Radford University's Web and Mobile Technologies Department during my Senior year at Radford University</h3>
+                </li>
+                Responsibilities Included the Following:
+                <ol>
+                  <li>
+                  </li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ol>
+              </ul> </div> </div>
+            </article>
+            <article class="message is-link is-large">
+              <div id="homemessage4" class="message-body">
+                <div class="content">
+                  <ul>
+                <li><h3 id="headertitle4" class="title is-4">I worked as a Graduate Assistant under Dr. Caleb Bradberry during my first semester at Radford University's Master's Program.</h3>
+                </li>
+
+                Responsibilities Included the Following:
+                <ol>
+                  <li>
+                  </li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ol>
+              </ul> </div> </div>
+            </article>
+
+                <article class="message is-link is-large">
+                  <div id="homemessage5" class="message-body">
+                    <div class="content">
+                      <ul>
+                      <li><h3 id="headertitle5" class="title is-4">I worked as Graduate Research Assistant under Dr. Miodrag Lovric during my second semester at Radford University's Master's Program.</h3>
+                      </li>
+                Responsibilities Included the Following:
+                <ol>
+                  <li>
+                  </li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ol>
+                
+              </ul> </div> </div>
+      </article>
 </div>
         </body>
         </html>
-<script>
-  isDarkMode = false
-
-  $("#homemessage").fadeIn("3000");
-    function SwapDarkMode(){
-      if (isDarkMode){
-
-        document.getElementsByTagName('html')[0].style.backgroundColor = '#dddddd'
-        document.getElementById("DarkModeDetect").style.color = "#000000"
-        document.getElementById("headertitle").style.color = "#000000"
-        document.getElementById("homemessage").style.color = '#222222'
-        document.getElementById("homemessage").style.backgroundColor = '#aaaaff'
-        document.getElementById("DarkMode").innerHTML = "Dark Mode"
-        isDarkMode = false
+        <script>
+          var isDarkMode=false
+          $("#homemessage1").fadeIn("3000");
+          $("#homemessage2").fadeIn("3000");
+          $("#homemessage3").fadeIn("3000");
+          $("#homemessage4").fadeIn("3000");
+          $("#homemessage5").fadeIn("3000");
+            function SwapDarkMode(){
+              if (isDarkMode){
         
-      }
-      else {
-        document.getElementsByTagName('html')[0].style.backgroundColor = '#222222'
-        document.getElementById("homemessage").style.color = '#dddddd'
-        document.getElementById("DarkMode").innerHTML = "Light Mode"
-        document.getElementById("DarkModeDetect").style.color = "#ffffff"
-        document.getElementById("headertitle").style.color = "#ffffff"
-        document.getElementById("homemessage").style.backgroundColor = '#5555ff'
-        isDarkMode = true
-      }
-    }
-</script>
+                document.getElementsByTagName('html')[0].style.backgroundColor = '#dddddd'
+                document.getElementById("DarkModeDetect").style.color = "#000000"
+                document.getElementById("headertitle").style.color = "#000000"
+                document.getElementById("headertitle1").style.color = "#000000"
+                document.getElementById("headertitle2").style.color = "#000000"
+                document.getElementById("headertitle3").style.color = "#000000"
+                document.getElementById("headertitle4").style.color = "#000000"
+                document.getElementById("headertitle5").style.color = "#000000"
+                document.getElementById("homemessage1").style.color = '#222222'
+                document.getElementById("homemessage1").style.backgroundColor = '#aaaaff'
+                document.getElementById("homemessage2").style.color = '#222222'
+                document.getElementById("homemessage2").style.backgroundColor = '#aaaaff'
+                document.getElementById("homemessage3").style.color = '#222222'
+                document.getElementById("homemessage3").style.backgroundColor = '#aaaaff'
+                document.getElementById("homemessage4").style.color = '#222222'
+                document.getElementById("homemessage4").style.backgroundColor = '#aaaaff'
+                document.getElementById("homemessage5").style.color = '#222222'
+                document.getElementById("homemessage5").style.backgroundColor = '#aaaaff'
+                document.getElementById("DarkMode").innerHTML = "Dark Mode"
+                isDarkMode = false
+                
+              }
+              else {
+                document.getElementsByTagName('html')[0].style.backgroundColor = '#222222'
+                document.getElementById("homemessage1").style.color = '#dddddd'
+                document.getElementById("homemessage1").style.backgroundColor = '#5555ff'
+                document.getElementById("homemessage2").style.color = '#dddddd'
+                document.getElementById("homemessage2").style.backgroundColor = '#5555ff'
+                document.getElementById("homemessage3").style.color = '#dddddd'
+                document.getElementById("homemessage3").style.backgroundColor = '#5555ff'
+                document.getElementById("homemessage4").style.color = '#dddddd'
+                document.getElementById("homemessage4").style.backgroundColor = '#5555ff'
+                document.getElementById("homemessage5").style.color = '#dddddd'
+                document.getElementById("homemessage5").style.backgroundColor = '#5555ff'
+                document.getElementById("DarkMode").innerHTML = "Light Mode"
+                document.getElementById("DarkModeDetect").style.color = "#ffffff"
+                document.getElementById("headertitle").style.color = "#ffffff"
+                document.getElementById("headertitle1").style.color = "#ffffff"
+                document.getElementById("headertitle2").style.color = "#ffffff"
+                document.getElementById("headertitle3").style.color = "#ffffff"
+                document.getElementById("headertitle4").style.color = "#ffffff"
+                document.getElementById("headertitle5").style.color = "#ffffff"
+
+                isDarkMode = true
+              }
+            }
+        
+        </script>

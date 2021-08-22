@@ -58,50 +58,52 @@
         </nav>
         <div id = "DarkModeDetect">
           <button id="DarkMode" class="button is-outlined" onclick="SwapDarkMode()">Dark Mode</button>
-        <center><h3 id="headertitle" class="title is-1">About Myself</h1>
+        <center><h3 id="headertitle" class="title is-1">A Bit About Myself</h1></center>
         <br><article class="message is-link is-large">
         <div id="homemessage" class="message-body">
           <div class="content">
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br> 
-            <br></br>
-            <br></br>
-            <br></br>
+            <ul>
+              <li>I live and surround myself with technology. Video games and programming are two of my favorite downtime activities.
+              </li>
+              <li>I love cardio! If there's no time for a two mile walk at minimum, I make time for a run.
+              </li>
+              <li>I have a cat! She'll jump up on my lap or make her presence known when I'm doing work or am in a video call.
+              </li>
+              <li>I keep several bottles of water in my fridge filled with cold water.
+              </li>
+              <li>I'm INFJ (Meyers-Briggs personality test) and I'm a strong type 5 personality (9 type personality test).
+              </li>
+              <li>I was inducted into the Upsilon Pi Epsilon honor's society at RU</li>
+            </ul>
           </div> </div>  
-      </article></center>
+      </article>
 </div>
         </body>
         </html>
-<script>
-  var isDarkMode=false
-  $("#homemessage").fadeIn("3000");
-    function SwapDarkMode(){
-      if (isDarkMode){
-
-        document.getElementsByTagName('html')[0].style.backgroundColor = '#dddddd'
-        document.getElementById("DarkModeDetect").style.color = "#000000"
-        document.getElementById("headertitle").style.color = "#000000"
-        document.getElementById("homemessage").style.color = '#222222'
-        document.getElementById("homemessage").style.backgroundColor = '#aaaaff'
-        document.getElementById("DarkMode").innerHTML = "Dark Mode"
-        isDarkMode = false
+        <script>
+          var isDarkMode=false
+          $("#homemessage").fadeIn("3000");
+            function SwapDarkMode(){
+              if (isDarkMode){
         
-      }
-      else {
-        document.getElementsByTagName('html')[0].style.backgroundColor = '#222222'
-        document.getElementById("homemessage").style.color = '#dddddd'
-        document.getElementById("DarkMode").innerHTML = "Light Mode"
-        document.getElementById("DarkModeDetect").style.color = "#ffffff"
-        document.getElementById("headertitle").style.color = "#ffffff"
-        document.getElementById("homemessage").style.backgroundColor = '#5555ff'
-        isDarkMode = true
-      }
-    }
-
-</script>
+                document.getElementsByTagName('html')[0].style.backgroundColor = '#dddddd'
+                document.getElementById("DarkModeDetect").style.color = "#000000"
+                document.getElementById("headertitle").style.color = "#000000"
+                document.getElementById("homemessage").style.color = '#222222'
+                document.getElementById("homemessage").style.backgroundColor = '#aaaaff'
+                document.getElementById("DarkMode").innerHTML = "Dark Mode"
+                isDarkMode = false
+                
+              }
+              else {
+                document.getElementsByTagName('html')[0].style.backgroundColor = '#222222'
+                document.getElementById("homemessage").style.color = '#dddddd'
+                document.getElementById("DarkMode").innerHTML = "Light Mode"
+                document.getElementById("DarkModeDetect").style.color = "#ffffff"
+                document.getElementById("headertitle").style.color = "#ffffff"
+                document.getElementById("homemessage").style.backgroundColor = '#5555ff'
+                isDarkMode = true
+              }
+            }
+        
+        </script>
