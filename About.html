@@ -5,105 +5,79 @@
   -->
 
   <head>
-    <style>
-      html {
-        background-color : #dddddd;
-      }
-      #darkModeDetect. #headertitle, #headersubtitle {
-        color: #000000
-      }
-      #homemessage {
-        display: none;
-        background-color: #aaaaff;
-        color: #222222
-      }
-      </style>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Michael Hammond's Website</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
-  <body>
-      <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
-          <div id="navbarBasicExample" class="navbar-menu">
-            <div class="navbar-start">
-              <a class="navbar-item" href="index.html">
-                Home
-              </a>
-        
-              <a class="navbar-item" href="Experience.html">
-                Experience
-              </a>
+  <style>
+    #homemessage, #headertitle, #headersubtitle{
+      display: none;
+    }
+    </style>
+<body>
+  <section class="hero is-fullheight is-dark is-bold">
+   <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item">
+        <figure class="image is-12x12">
+          <img class="is-rounded" src="tech-vector-matrix-background.jpg"  href="index.html">
+        </figure>
+        </a>
+        <a class="navbar-item"  href="index.html">Michael Hammond</a>
 
-              <a class="navbar-item" href="Projects.html">
-                Projects
-              </a>
+      <div class="navbar-burger burger" target="Options" onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
 
-              <a class="navbar-item" href="About.html">
-                About
-              </a>
-              </div>
-            </div>
-        
-            <div class="navbar-end">
-                <div class="navbar-item">
-                  <div class="buttons">
-                    <a class="button is-primary" href="contact.html">
-                      <strong>Contact</strong>
-                    </a>
-                  </div>
-                </div>
+    <div class="navbar-menu" id="Options">
+      <div class="navbar-end">
+
+        <a class="navbar-item" href="Experience.html">
+          Experience
+        </a>
+    
+        <a class="navbar-item" href="Projects.html">
+          Projects
+        </a>
+    
+        <a class="navbar-item" href="About.html">
+          About
+        </a>
+        <a class="navbar-item" href="contact.html">
+          Contact
+        </a>
+      </div>
+    </div>
+  </nav>
+        <!-- Hero content: will be in the middle -->
+        <div class="hero-body">
+          <div class="container">
+            <center><h3 id="headertitle" class="title is-1">A Bit About Myself</h3></center>
+            <br>
+            <br>
+            <br>
+            <h2 id="headersubtitle" class="title is-3">
+                  I live and surround myself with technology. Video games and programming are two of my favorite downtime activities.
+                  <br><br>I love sitting down and diving deep into a problem to solve it. I will at times dig deep to find solutions to problems that have persisted for years.
+                  <br><br>I love cardio! If there's no time for a two mile walk at minimum, I make time for a run.
+                  <br><br>I have a cat! She'll jump up on my lap or make her presence known when I'm doing work or am in a video call.
+                  <br><br>I'm an INFJ (Meyers-Briggs personality test) and I'm a strong type 5 personality (9 type personality test).
+                  <br><br>I was inducted into the Upsilon Pi Epsilon honor's society at RU
+                  <br><br>I completed an Associate's Degree with several high honors and a Summa Cum Laude GPA  year after I graduated High School.</h2>
           </div>
-        </nav>
-        <div id = "DarkModeDetect">
-          <button id="DarkMode" class="button is-outlined" onclick="SwapDarkMode()">Dark Mode</button>
-        <center><h3 id="headertitle" class="title is-1">A Bit About Myself</h1></center>
-        <br><article class="message is-link is-large">
-        <div id="homemessage" class="message-body">
-          <div class="content">
-            <ul>
-              <li>I live and surround myself with technology. Video games and programming are two of my favorite downtime activities.
-              </li>
-              <li>I love cardio! If there's no time for a two mile walk at minimum, I make time for a run.
-              </li>
-              <li>I have a cat! She'll jump up on my lap or make her presence known when I'm doing work or am in a video call.
-              </li>
-              <li>I keep several bottles of water in my fridge filled with cold water.
-              </li>
-              <li>I'm INFJ (Meyers-Briggs personality test) and I'm a strong type 5 personality (9 type personality test).
-              </li>
-              <li>I was inducted into the Upsilon Pi Epsilon honor's society at RU</li>
-            </ul>
-          </div> </div>  
-      </article>
-</div>
+        </div>
+        <a href="https://www.vecteezy.com/free-vector/web">Web Vectors by Vecteezy</a>
+      </section>
         </body>
         </html>
         <script>
-          var isDarkMode=false
+          $("#headertitle").fadeIn("3000");
+          $("#headersubtitle").fadeIn("3000");
           $("#homemessage").fadeIn("3000");
-            function SwapDarkMode(){
-              if (isDarkMode){
-        
-                document.getElementsByTagName('html')[0].style.backgroundColor = '#dddddd'
-                document.getElementById("DarkModeDetect").style.color = "#000000"
-                document.getElementById("headertitle").style.color = "#000000"
-                document.getElementById("homemessage").style.color = '#222222'
-                document.getElementById("homemessage").style.backgroundColor = '#aaaaff'
-                document.getElementById("DarkMode").innerHTML = "Dark Mode"
-                isDarkMode = false
-                
-              }
-              else {
-                document.getElementsByTagName('html')[0].style.backgroundColor = '#222222'
-                document.getElementById("homemessage").style.color = '#dddddd'
-                document.getElementById("DarkMode").innerHTML = "Light Mode"
-                document.getElementById("DarkModeDetect").style.color = "#ffffff"
-                document.getElementById("headertitle").style.color = "#ffffff"
-                document.getElementById("homemessage").style.backgroundColor = '#5555ff'
-                isDarkMode = true
-              }
-            }
-        
         </script>

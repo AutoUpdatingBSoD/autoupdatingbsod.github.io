@@ -9,98 +9,101 @@
     html {
       background-color : #dddddd;
     }
-    #darkModeDetect. #headertitle, #headersubtitle {
+    #darkModeDetect, #headertitle {
       color: #000000
-    }
-    #homemessage {
-      display: none;
-      background-color: #aaaaff;
-      color: #222222
     }
     </style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Michael Hammond's Website</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
   <body>
-      <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
-          <div id="navbarBasicExample" class="navbar-menu">
-            <div class="navbar-start">
-              <a class="navbar-item" href="index.html">
-                Home
+    <!DOCTYPE html>
+    <html lang="en">
+    <!--Name: Michael Hammond;
+      File Name: Portfolio.html;
+    -->
+  
+    <head>
+  
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Michael Hammond's Website</title>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+    <style>
+      #darkModeDetect, #headertitle, #headersubtitle {
+        color: #ffffff
+      }
+      #contents {
+        display: none;
+        color: #ffffff
+      }
+      #homemessage{
+        max-height: 5000;
+      }
+   
+      </style>
+    <body>
+      <section class="hero is-fullheight is-dark is-bold">
+          <nav class="navbar">
+          <div class="navbar-brand">
+            <a class="navbar-item">
+              <figure class="image is-12x12">
+                <img class="is-rounded" src="tech-vector-matrix-background.jpg"  href="index.html">
+              </figure>
               </a>
-        
+              <a class="navbar-item"  href="index.html">Michael Hammond</a>
+      
+            <div class="navbar-burger burger" target="Options" onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+      
+          <div class="navbar-menu" id="Options">
+            <div class="navbar-end">
+      
               <a class="navbar-item" href="Experience.html">
                 Experience
               </a>
-
+          
               <a class="navbar-item" href="Projects.html">
                 Projects
               </a>
-
+          
               <a class="navbar-item" href="About.html">
                 About
               </a>
-              </div>
+              <a class="navbar-item" href="contact.html">
+                Contact
+              </a>
             </div>
-        
-            <div class="navbar-end">
-                <div class="navbar-item">
-                  <div class="buttons">
-                    <a class="button is-primary" href="contact.html">
-                      <strong>Contact</strong>
-                    </a>
-                  </div>
-                </div>
           </div>
         </nav>
-        <div id = "DarkModeDetect">
-          <button id="DarkMode" class="button is-outlined" onclick="SwapDarkMode()">Dark Mode</button>
-        <center><h3 id="headertitle" class="title is-1">Michael Hammond's Home Page</h1>
-        <br><h6 is-3 id="headersubtitle" class="subtitle is-3">Welcome! You are currently on my developer website.</h6>
-        <br><article class="message is-link is-large">
-        <div id="homemessage" class="message-body">
-          <div class="content">
-            <ul>
-            <li>To learn about various projects I've been involved in and how you can try them yourself, click on the Projects Tab.</li>
-            <li>To find out what experience I have in the field, click the Experience tab.</li>
-            <li>If you want to find out more about me as a person, click the About tab.</li>
-            <li>If you want to get in contact with me, professional links are in the Contact button on the top right.</li>
-          </ul> </div> </div>
-      </article></center>
-</div>
+
+
+
+        <!-- Hero content: will be in the middle -->
+        <div class="hero-body">
+        </div>
+        <div>     
+          <figure class="image is-centered">
+          <img src="techno_banner_of_connecting_dots_0210.jpg" id="homemessage" width=1000 height=500></img>
+        </figure>
+                <h2 id="headersubtitle" class="title is-3">Hello! I'm Michael Hammond. I'm a programmer who loves to solve problems and learn new concepts. To find out more, click the links above!</h2>
+                 </div>
+
+        <a href="https://www.vecteezy.com/free-vector/web">Web Vectors by Vecteezy</a>
+      </section>
         </body>
-        </html>
-<script>
-  var isDarkMode=false
-  $("#homemessage").fadeIn("3000");
-    function SwapDarkMode(){
-      if (isDarkMode){
 
-        document.getElementsByTagName('html')[0].style.backgroundColor = '#dddddd'
-        document.getElementById("DarkModeDetect").style.color = "#000000"
-        document.getElementById("headertitle").style.color = "#000000"
-        document.getElementById("headersubtitle").style.color = "#000000"
-        document.getElementById("headersubtitle").style.color = "#000000"
-        document.getElementById("homemessage").style.color = '#222222'
-        document.getElementById("homemessage").style.backgroundColor = '#aaaaff'
-        document.getElementById("DarkMode").innerHTML = "Dark Mode"
-        isDarkMode = false
+        <script>
+          $("#contents").fadeIn("3000");
         
-      }
-      else {
-        document.getElementsByTagName('html')[0].style.backgroundColor = '#222222'
-        document.getElementById("homemessage").style.color = '#dddddd'
-        document.getElementById("DarkMode").innerHTML = "Light Mode"
-        document.getElementById("DarkModeDetect").style.color = "#ffffff"
-        document.getElementById("headertitle").style.color = "#ffffff"
-        document.getElementById("headersubtitle").style.color = "#ffffff"
-        document.getElementById("homemessage").style.backgroundColor = '#5555ff'
-        document.getElementById("headersubtitle").style.color = "#ffffff"
-        isDarkMode = true
-      }
-    }
+        </script>
+</html>
 
-</script>
