@@ -110,3 +110,20 @@
         </script>
 </html>
 
+$(document).ready(function() {
+            
+	$.ajax({
+	  type: "GET",  
+	  url: "associations.csv",
+	  dataType: "text",       
+	  success: function(response)  
+	  {
+		var csvdata = $.csv.toArrays(response);
+            for (i = 0; i < x.length; i++) { 
+                if (x[i].innerHTML.toLowerCase() === csvdata[i][0].toLowerCase()) {
+                    x[i].href = csvdata[i][0];
+	    }   
+        }
+    }
+	});
+});
