@@ -13,13 +13,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
   <style>
-    #darkModeDetect, #headertitle, #headersubtitle {
+    #projectmessage, #headertitle, #headersubtitle {
       color: #ffffff
-    }
-    #homemessage1, #homemessage2, #homemessage3, #homemessage4, #homemessage5 {
-      display: none;
-      background-color: #aaccff;
-      color: #222222
     }
     .leftalign{
       text-align: left;
@@ -28,7 +23,7 @@
       height: 200%;
     }
     .centered{
-
+      text-align: center;
     }
  
     </style>
@@ -73,10 +68,10 @@
             <!-- Hero content: will be in the middle -->
             <div class="hero-body">
               <div class="container has-text-centered">
-                <center><h3 id="headersubtitle" class="title is-1">Projects I've Worked On</h3></center>
+                <h3 id="headertitle" class="title is-1 centered">Projects I've Worked On</h3>
                 <br>
                 <div class = "tile is-ancestor">
-                  <div class = "tile is-vertical is-12">
+                  <div id="projectmessage" class = "tile is-vertical is-12">
                      <div class = "tile centered">
                         <div class = "tile is-parent is-vertical">
                            <article class = "tile is-child notification is-primary">
@@ -102,7 +97,7 @@
                         </article>
                      </div>
                     </div>
-                    <div class = "tile is-vertical is-12">
+                    <div id="projectmessage2" class = "tile is-vertical is-12">
                     <div class = "tile centered">
                   <div class = "tile is-parent">
                     <article class = "tile is-child notification is-primary">
@@ -115,7 +110,7 @@
                  </div>
                   
 
-                 <div class = "tile is-vertical is-8">
+                 
                   <div class = "tile is-parent">
                     <article class = "tile is-child notification is-danger">
                      <p class = "title">Radford University President's Strategic Planning Progress Report Web Application</p>
@@ -125,7 +120,7 @@
                     </article>
                     </div>
                   </div>    
-                </div>
+                
 
                 </div>
               </div>
@@ -139,6 +134,7 @@
         </html>
 <script>
 
-  var isDarkMode=false
-          $("#homemessage").fadeIn("3000");
+  $("#headertitle").fadeIn("3000");
+  $("#projectmessage2").fadeIn("3000");
+  $("#projectmessage").fadeIn("3000");
 </script>

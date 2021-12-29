@@ -13,7 +13,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
   <style>
-    #homemessage, #headertitle, #headersubtitle{
+    #aboutmessage, #headertitle, #headersubtitle{
       display: none;
     }
     .leftalign{
@@ -64,16 +64,13 @@
         <!-- Hero content: will be in the middle -->
         <div class="hero-body">
           <div class="container">
-            <center><h3 id="headertitle" class="title is-1"></h3></center>
-            <br>
-            <br>
-            <br>
-            <div class = "tile is-vertical is-12">
+          
+          <p id="headertitle" class = "title centered is-1">A Bit About Myself</p>
+            <div id="aboutmessage" class = "tile is-vertical is-12">
               <div class = "tile centered">
                  <div class = "tile is-parent is-vertical">
-                    <article class = "tile is-child notification is-primary">
-                     <p class = "title centered">A Bit About Myself</p>
-                     <p class = "subtitle leftalign">
+                    <article class = "tile is-child notification is-info">
+                     <p id="headersubtitle" class = "title leftalign">
                      I live and surround myself with technology. Video games and programming are two of my favorite downtime activities.
                      
                      <br><br>I have a Master's Degree in Computer Science from Radford University.
@@ -95,5 +92,5 @@
         <script>
           $("#headertitle").fadeIn("3000");
           $("#headersubtitle").fadeIn("3000");
-          $("#homemessage").fadeIn("3000");
+          $("#aboutmessage").fadeIn("3000");
         </script>
