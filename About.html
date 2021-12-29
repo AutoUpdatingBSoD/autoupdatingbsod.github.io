@@ -16,6 +16,12 @@
     #homemessage, #headertitle, #headersubtitle{
       display: none;
     }
+    .leftalign{
+      text-align: left;
+    }
+    .centered{
+      text-align: center;
+    }
     </style>
 <body>
   <section class="hero is-fullheight is-dark is-bold">
@@ -58,16 +64,28 @@
         <!-- Hero content: will be in the middle -->
         <div class="hero-body">
           <div class="container">
-            <center><h3 id="headertitle" class="title is-1">A Bit About Myself</h3></center>
+            <center><h3 id="headertitle" class="title is-1"></h3></center>
             <br>
             <br>
             <br>
-            <h2 id="headersubtitle" class="title is-3">
-                  I live and surround myself with technology. Video games and programming are two of my favorite downtime activities.
-                  <br><br>I love sitting down and diving deep into a problem to solve it. I am able to dig deep to find solutions to problems that have persisted for years.
-                  <br><br>I love cardio! I will set aside time for taking walks.
-                  <br><br>I have a cat! She'll jump up on my lap or make her presence known when I'm doing work or am in a video call.
-                  <br><br>I've had almost no prior experience or exposure to programming before College.</h2>
+            <div class = "tile is-vertical is-12">
+              <div class = "tile centered">
+                 <div class = "tile is-parent is-vertical">
+                    <article class = "tile is-child notification is-primary">
+                     <p class = "title centered">A Bit About Myself</p>
+                     <p class = "subtitle leftalign">
+                     I live and surround myself with technology. Video games and programming are two of my favorite downtime activities.
+                     
+                     <br><br>I have a Master's Degree in Computer Science from Radford University.
+                     <br><br>
+                     <br><br>I love sitting down and diving deep into a problem to solve it. I am able to dig deep to find solutions to problems that have persisted for years.
+                     
+                     <br><br>I've had almost no prior experience or exposure to programming before College.
+                     <br><br></p>
+                    </article>
+                  </div>
+              </div>
+            </div>
           </div>
         </div>
         <a href="https://www.vecteezy.com/free-vector/web">Web Vectors by Vecteezy</a>
