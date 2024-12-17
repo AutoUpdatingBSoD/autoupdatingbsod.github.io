@@ -25,11 +25,7 @@
     </head>
 <body>
   <section class="hero is-fullheight is-dark is-bold">
-   
-        <!-- Hero content: will be in the middle -->
-        <div class="hero-body">
-          <div class="container">
-          <nav class="navbar">
+             <nav class="navbar">
     <div class="navbar-brand">
             <a class="navbar-item" href="index.html">
               <figure class="image is-12x12">
@@ -38,33 +34,45 @@
               Michael Hammond
                </a>
 
-      <div class="navbar-burger burger" target="Options" onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+<a class="navbar-burger is-active" role="button" aria-label="menu" aria-expanded="false">
+  <span aria-hidden="true"></span>
+  <span aria-hidden="true"></span>
+  <span aria-hidden="true"></span>
+  <span aria-hidden="true"></span>
+</a>
     </div>
-
-    <div class="navbar-menu" id="Options">
-      <div class="navbar-end">
-
-        <a class="navbar-item" href="Experience.html">
+<div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          <a class="button is-primary" href="Experience.html">
           Experience
         </a>
-    
-        <a class="navbar-item" href="Projects.html">
+        <a class="button is-primary" href="Projects.html">
           Projects
         </a>
     
-        <a class="navbar-item" href="About.html">
+        <a class="button is-primary" href="About.html">
           About
         </a>
-        <a class="navbar-item" href="contact.html">
+        <a class="button is-primary" href="contact.html">
           Contact
         </a>
+        </div>
+      </div>
+    </div>
+    <div class="navbar-menu" id="Options">
+      <div class="navbar-end">
+
+
+    
+
       </div>
     </div>
   </nav>
+        <!-- Hero content: will be in the middle -->
+        <div class="hero-body">
+          <div class="container">
+
           <p id="headertitle" class = "title centered is-1">A Bit About Myself</p>
             <div id="aboutmessage" class = "tile is-vertical is-12">
               <div class = "tile centered">
