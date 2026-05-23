@@ -1,0 +1,99 @@
+    #aboutmessage, #headertitle, #headersubtitle, #headersubtitle2, #headersubtitle3, #headersubtitle4, #headersubtitle5{
+      display: none;
+    }
+    .leftalign{
+      text-align: left;
+    }
+    .centered{
+      text-align: center;
+    }
+      #headshot{
+        width: 24px;
+        height: 24px;
+    }
+    #darkModeDetect, #headertitle, #headersubtitle {
+        color: #ffffff
+      }
+      #contents {
+        display: none;
+        color: #ffffff
+      }
+
+
+      figure{
+        width: 24px;
+        height: 24px;
+    }
+        html {
+      background-color : #dddddd;
+    }
+    #darkModeDetect, #headertitle {
+      color: #000000;
+    }
+    .centeredtext{
+      text-align: center;
+    }
+      #headshot{
+        width: 24px;
+        height: 24px;
+    }
+      #homemessage{
+        max-height: 100;
+        width: 80%;
+        height: 80%;
+        text-align: center;
+        margin: 0 auto;
+      }
+      #contents{
+        text-align: center;
+        margin: 0 auto;
+      }
+      #banner{
+      }
+      .height-4x{
+        height: 120px;
+      }  html {
+    }
+    #homemessage, #homemessage2, #homemessage3, #homemessage4, #homemessage5 {
+      display: none;
+      color: #222222
+    }
+    .leftalign{
+      text-align: left;
+    }
+    .centered{
+      text-align: center;
+    }
+    li{
+      color: #ffffff;
+      list-style-type: disc;
+    }
+    .reduced-size{
+      font-size: 75%;
+      position: relative;
+      left: 2%;
+    }
+    body
+    {
+      height: 200%;
+    }
+      #headshot{
+        width: 24px;
+        height: 24px;
+    }
+  #projectmessage, #headertitle, #headersubtitle {
+      color: #ffffff
+    }
+    .leftalign{
+      text-align: left;
+    }
+    body{
+      height: 200%;
+    }
+    .centered{
+      text-align: center;
+    }
+      #headshot{
+        width: 24px;
+        height: 24px;
+    }
